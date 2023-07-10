@@ -33,6 +33,9 @@ touch $REPO_NAME/src/data/__init__.py
 # Download Python .gitignore file in the repository directory
 curl https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore -o $REPO_NAME/.gitignore
 
+# Append .DS_Store ignore rule to .gitignore
+echo "**/.DS_Store" >> $REPO_NAME/.gitignore
+
 # Navigate to the repository directory
 cd $REPO_NAME
 
