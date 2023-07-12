@@ -49,7 +49,6 @@ conda create -n $ENV_NAME python=3.10 -y
 source activate $ENV_NAME
 
 # Define Python packages
-echo "python=3.10" > requirements.txt
 for PACKAGE in $PACKAGES
 do
     echo $PACKAGE >> requirements.txt
